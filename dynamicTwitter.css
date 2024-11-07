@@ -1,0 +1,157 @@
+html, body, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.content-container {
+    border: 1px solid rgba(195, 195, 195, 0.301);
+    height: 100vh;
+    width: 75%;
+    margin: auto;
+    max-width: 615px;
+    min-width: 375px;
+}
+.light-color-font {
+    color: rgb(110, 110, 110);
+}
+.header-container {
+    width: 100%;
+    color: black;
+    display: flex;
+    gap: 20px;
+}
+.cover-container {
+    margin-top: 8px;
+}
+.profile-container {
+    position: relative;
+    padding-top: 75px;
+    padding-left: 15px;
+}
+.tweets-container {
+    color: black;
+}
+.back-btn {
+    border: none;
+    background-color: white;
+    color: #00b3ff;
+    font-size: 25px;
+    padding: 5px 15px;
+}
+.display-name-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.display-name {
+    font-size: 20px;
+    margin: 0;
+}
+.verified-icon {
+    width: 20px;
+}
+.tweet-count {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.cover-image {
+    width: 100%;
+    object-fit: cover;
+}
+.profile-image {
+    border-radius: 500px;
+    width: 150px;
+    position: absolute;
+    top: -85px;
+    left: 3%;
+    border: 5px solid white;
+}
+.follow-btn {
+    position: absolute;
+    top: 5px;
+    right: 3%; 
+}
+.follow-btn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+}
+.joined-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.calendar-icon {
+    width:22px;
+    opacity: 0.5;
+}
+.follow-count-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.following-container, .followers-container {
+    display: flex;
+    gap: 5px;
+}
+.follow-count {
+    font-weight: 700;
+}
+.tabs {
+    display: flex;
+}
+.tab {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    padding: 17px 0;
+    border-bottom: 2px solid transparent;
+}
+.tab:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.active-tab {
+    border-bottom: 2px solid #00b3ff;
+    color: #00b3ff;
+}
+.tweet {
+    border-top: 1px solid rgba(195, 195, 195, 0.301);
+    display: flex;
+    gap: 10px;
+    padding: 10px 15px;
+}
+.tweet-user-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.small-profile-image {
+    width: 45px;
+    border-radius: 500px;
+    height: 100%;
+}
+.tweet-content .display-name {
+    font-size: 16px;
+}
+.tweet-content .verified-icon {
+    width: 15px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 560px) {
+    .profile-image {
+        width: 120px;
+        position: absolute;
+        top: -80px;
+        left: 3%;
+    }
+}
